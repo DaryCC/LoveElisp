@@ -1,0 +1,65 @@
+#+title: How to really love Emacs? Learn Elisp.
+#+description:LISP programming exercises from: \
+#+OPTIONS: broken-links:t
+Elisp Tutorial
+* Contenido :TOC:
+- [[#lisp-processing][Lisp Processing]]
+  - [[#básico][Básico]]
+  - [[#lists][Lists]]
+    - [[#numbers-lists-inside-of-lists][Numbers, Lists inside of Lists]]
+    - [[#lisp-atoms][Lisp atoms]]
+  - [[#run-a-program][Run a program]]
+  - [[#generate-an-error-message][Generate an Error Message]]
+
+* Lisp Processing
+** Básico
+#+name: emacs-lisp-hello-world
+#+begin_src emacs-lisp :tangle ./1.el  :results output :exports both
+  (princ "Hello World")
+  (+ 1 2)
+#+end_src
+
+#+RESULTS: emacs-lisp-hello-world
+: 3
+** Lists
+#+begin_src lisp
+  '(rose violet nadia)
+
+  '(rose
+    violet
+    daisy
+    buttercup)
+#+end_src
+*** Numbers, Lists inside of Lists
+#+begin_src emacs-lisp :tangle yes
+  ;; numbers
+  (+ 2 2)
+  ;; list inside of a list
+  '(this list has (a list inside of it))
+  #+end_src
+*** Lisp atoms
+In a list, atoms are separated from each other by whitespace. They can be right
+next to a parenthesis.
+Text between double quotation marks—even sentences or paragraphs—is also an
+atom. Here is an example:
+#+begin_src emacs-lisp :tangle yes
+'(this list includes "text between quotation marks.")
+#+end_src
+** Run a program
+When a ~'~ preceds a list, it tells t tells Lisp to do nothing with the list,
+other than take it as it is written. But if there is no quote preceding a list,
+the first item of the list is special: it is a command for the computer to obey.
+(In Lisp, these commands are called functions.)
+#+begin_src emacs-lisp :tangle yes :results output :exports both
+  (+ 3 2)
+#+end_src
+#+RESULTS:
+: 5
+
+#+begin_src emacs-lisp :tangle yes :results output :exports both
+  '(this is a quoted list)
+#+end_src
+
+#+RESULTS:
+| this | is | a | quoted | list |
+** Generate an Error Message
