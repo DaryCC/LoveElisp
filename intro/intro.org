@@ -3,10 +3,10 @@
 #+OPTIONS: broken-links:t 
 * Tabla de contenido :TOC:
 - [[#funciones][Funciones]]
-  - [[#f-con-argumentos][f con argumentos]]
-    - [[#sumas][sumas]]
+  - [[#funciones-con-argumentos][Funciones con argumentos]]
+    - [[#sumas][Sumas]]
     - [[#suma-con-listas][Suma con listas]]
-    - [[#factorial][factorial]]
+    - [[#factorial][Factorial]]
     - [[#map][map]]
 - [[#variables][Variables]]
 - [[#inmutabilidad][Inmutabilidad]]
@@ -28,7 +28,7 @@
 
 
 ** Funciones con argumentos
-*** sumas
+*** Sumas
 #+begin_src emacs-lisp :tangle yes :results both: exports both
   (
    defun sum(a b)
