@@ -1,6 +1,9 @@
-#+title:Intro  de LISP 
+#+title:Intro  de LISP
 #+author:dary.cc@gmail.com
-#+OPTIONS: broken-links:t 
+#+OPTIONS: broken-links:t
+Estos ejemplos son de [[https://www.youtube.com/watch?v=0mRuRXPH8J8][aquí.]]
+
+
 * Tabla de contenido :TOC:
 - [[#funciones][Funciones]]
   - [[#funciones-con-argumentos][Funciones con argumentos]]
@@ -159,7 +162,3 @@ La lista no modifica sus valores.
 
 18
 #+end_example
-
-
-
-
