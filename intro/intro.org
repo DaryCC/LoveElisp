@@ -105,7 +105,7 @@ Lamda es una /función anónima/, ~maps~ es parecido a la función en *Python* y
 
 
 * Inmutabilidad
-La lista no modificia sus valores.
+La lista no modifica sus valores.
 #+begin_src emacs-lisp :tangle yes :results both :exports both
   (defvar lista '(1 2 3 4 5 6 ))
 
