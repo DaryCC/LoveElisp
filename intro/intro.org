@@ -27,7 +27,7 @@
 : "hola Dary"
 
 
-** f con argumentos
+** funciones con argumentos
 *** sumas
 #+begin_src emacs-lisp :tangle yes :results both: exports both
   (
