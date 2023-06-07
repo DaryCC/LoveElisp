@@ -27,7 +27,7 @@
 : "hola Dary"
 
 
-** funciones con argumentos
+** Funciones con argumentos
 *** sumas
 #+begin_src emacs-lisp :tangle yes :results both: exports both
   (
@@ -56,7 +56,7 @@ La función ~reduce~ es parecido a la función reduce en *Python* y *JS*.
 #+RESULTS:
 : 10
 
-*** factorial
+*** Factorial
 #+begin_src emacs-lisp :tangle yes :results both :exports both
   (
    defun factorial(num)
